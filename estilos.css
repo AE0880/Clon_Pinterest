@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: arial;
+}
+
+#navbar-pinterest {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+
+#pinterest-icon {
+    margin: auto;
+    width: 30px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#pinterest-icon:hover {
+    background-color: whitesmoke;
+}
+
+.inicio {
+    margin: auto;
+    width: 5%;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inicio:active {
+    background-color: black;
+    color: white;
+}
+
+.explorar {
+    margin: auto;
+    width: 7%;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.explorar:active {
+    background-color: black;
+    color: white;
+}
+
+.crear {
+    margin: auto;
+    width: 5%;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.crear:active {
+    background-color: black;
+    color: white;
+}
+
+.finder input {
+    margin: auto;
+    width: 1050px;
+    padding: 13px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: lightgray;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 50px;
+    border-style: none;
+    color: gray;
+}
+
+#notifications {
+    margin: auto;
+    width: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#notifications:hover {
+    background-color: whitesmoke;
+}
+
+#message {
+    margin: auto;
+    width: 30px;
+    padding: 12px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#message:hover {
+    background-color: whitesmoke;
+}
+
+#profile-img {
+    margin: auto;
+    width: 35px;
+    padding: 8px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#profile-img:hover {
+    background-color: whitesmoke;
+}
+
+.contenedor {
+    height: 2056px;
+    padding: 35px;
+    margin-top: 30px;
+    gap: 20px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.card-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+
+    border-radius: 30px;
+}
+
+.perfil {
+    margin: 10px;
+    width: 20%;
+    padding: 15px;
+    opacity: 0;
+
+    grid-column: 1/2;
+}
+
+.save_button {
+    height: 50px;
+    width: 75px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    opacity: 0;
+
+    grid-column: 3/5;
+}
+
+.share {
+    margin: 10px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0;
+
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.more {
+    margin: 10px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0;
+
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.card-image:hover {
+    opacity: 0.3;
+}
+
+.card-image:hover .perfil {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    opacity: 1;
+}
+
+
+.card-image:hover .save_button {
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    opacity: 1;
+
+}
+
+.card-image:hover .share {
+    text-align: center;
+    background-color: white;
+    opacity: 1;
+
+}
+
+.card-image:hover .more {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    opacity: 1;
+
+}
+
+
+.position1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    border-radius: 30px;
+    background-image: url(./images/pizza.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position2 {
+    grid-column: 2/3;
+    grid-row: 1/4;
+   
+    border-radius: 30px;
+    background-image: url(./images/pasta_carbonara.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+    border-radius: 30px;
+    background-image: url(./images/spaghetti-47.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position4 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+
+    border-radius: 30px;
+    background-image: url(./images/cat-and-red-wine-jj6zean7u5qcxylv.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position5 {
+    grid-column: 5/6;
+    grid-row: 1/4;
+
+    border-radius: 30px;
+    background-image: url(./images/utensilios.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position6 {
+    grid-column: 6/7;
+    grid-row: 1/3;
+
+    border-radius: 30px;
+    background-image: url(./images/amaranto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position7 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+
+    border-radius: 30px;
+    background-image: url(./images/masamadre.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position8 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+
+    border-radius: 30px;
+    background-image: url(./images/sartenes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position9 {
+    grid-column: 3/4;
+    grid-row: 2/5;
+
+    border-radius: 30px;
+    background-image: url(./images/uniforme.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position10 {
+    grid-column: 4/5;
+    grid-row: 3/6;
+
+    border-radius: 30px;
+    background-image: url(./images/recetas_amaranto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position11 {
+    grid-column: 5/6;
+    grid-row: 4/6;
+
+    border-radius: 30px;
+    background-image: url(./images/cocineras.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position12 {
+    grid-column: 6/7;
+    grid-row: 3/5;
+
+    border-radius: 30px;
+    background-image: url(./images/taco.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position13 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+
+    border-radius: 30px;
+    background-image: url(./images/comida-jponesa.gif);
+    background-repeat: no-repeat;
+    /*background-position: center;
+    background-size: cover;*/
+}
+
+.position14 {
+    grid-column: 2/3;
+    grid-row: 6/8;
+
+    border-radius: 30px;
+    background-image: url(./images/taco-time.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position15 {
+    grid-column: 3/4;
+    grid-row: 5/7;
+
+    border-radius: 30px;
+    background-image: url(./images/cerveza-pizza.gif);
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size: cover;
+}
+
+.position16 {
+    grid-column: 4/5;
+    grid-row: 6/8;
+
+    border-radius: 30px;
+    background-image: url(./images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position17 {
+    grid-column: 5/6;
+    grid-row: 6/7;
+
+    border-radius: 30px;
+    background-image: url(./images/this-is-fine.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position18 {
+    grid-column: 6/7;
+    grid-row: 5/8;
+
+    border-radius: 30px;
+    background-image: url(./images/restaurante.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position19 {
+    grid-column: 1/2;
+    grid-row: 6/9;
+
+    border-radius: 30px;
+    background-image: url(./images/checklist.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position20 {
+    grid-column: 2/3;
+    grid-row: 8/10;
+
+    border-radius: 30px;
+    background-image: url(./images/refri.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position21 {
+    grid-column: 3/4;
+    grid-row: 7/9;
+
+    border-radius: 30px;
+    background-image: url(./images/goku.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position22 {
+    grid-column: 4/5;
+    grid-row: 8/10;
+
+    border-radius: 30px;
+    background-image: url(./images/pozole.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position23 {
+    grid-column: 5/6;
+    grid-row: 7/9;
+
+    border-radius: 30px;
+    background-image: url(./images/platillo.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position24 {
+    grid-column: 6/7;
+    grid-row: 8/11;
+
+    border-radius: 30px;
+    background-image: url(./images/hotcakes.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position25 {
+    grid-column: 1/2;
+    grid-row: 9/12;
+
+    border-radius: 30px;
+    background-image: url(./images/fuentes-prote.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position26 {
+    grid-column: 2/3;
+    grid-row: 10/12;
+
+    border-radius: 30px;
+    background-image: url(./images/hotcakes2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position27 {
+    grid-column: 3/4;
+    grid-row: 9/12;
+
+    border-radius: 30px;
+    background-image: url(./images/ingredientes.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position28 {
+    grid-column: 4/5;
+    grid-row: 10/12;
+
+    border-radius: 30px;
+    background-image: url(./images/carrito-de-compra-3.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position29 {
+    grid-column: 5/6;
+    grid-row: 9/12;
+
+    border-radius: 30px;
+    background-image: url(./images/bolillo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.position30 {
+    grid-column: 6/7;
+    grid-row: 11/12;
+
+    border-radius: 30px;
+    background-image: url(./images/termico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1915px) {
+    .navbar-pinterest {
+        width: fit-content;
+    }
+    
+}
